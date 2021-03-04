@@ -6,7 +6,6 @@
 
 - static <[https://m.blog.naver.com/PostView.nhn?blogId=50after&logNo=220870844539&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=50after&logNo=220870844539&proxyReferer=https:%2F%2Fwww.google.com%2F)>
 - getter, setter <[https://kephilab.tistory.com/54](https://kephilab.tistory.com/54)>
-- 싱글톤 <[https://elfinlas.github.io/2019/09/23/java-singleton/](https://elfinlas.github.io/2019/09/23/java-singleton/)>
 
 # static 변수, 메소드
 
@@ -30,29 +29,3 @@ Student.serialNum = 100;
 - getter: 외부에서 사용 가능한 정도로 데이터 가공 후 전달
 
 +) 필드 타입이 boolean일 경우, getter 메소드명은 get이 아닌 is로 시작하는 것이 관례
-
-### singleton 패턴
-
-> 생성자가 여러 차례 호출되더라도 하나의 인스턴스만 존재하고 그 이후에 호출된 생성자는 최초의 인스턴스를 리턴하는 소프트웨어 디자인 패턴
-
-ex) 하나의 프린터기를 여러 명의 사원이 공유할 때, 하나의 날짜에 대한 여러 시간대를 호출할 때
-
-`static`으로 최초 한 번만 메모리를 할당하고
-
-`private`을 사용하여 메인 메소드에서 함부로 객체 생성을 하지 못하게 한다.
-
-`public static get()` 메소드를 통해 외부에서 유일한 객체를 참조할 수 있게 해준다.
-
-```java
-public class ExampleClass {
-    //Instance
-    private static ExampleClass instance = new ExampleClass();
-
-    //private construct
-    private ExampleClass() {}
-
-    public static ExampleClass getInstance() {
-        return instance;
-    }
-}
-```
