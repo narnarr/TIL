@@ -12,7 +12,7 @@
 
     		//생성자
     		public Student(int id, String name) {
-    				//매가값을 이용한 필드 초기화
+    				//매개값을 이용한 필드 초기화
     				studentID = id;
     				studentName = name;
     		}
