@@ -2,6 +2,7 @@
 
 - java.lang <[https://ryan-han.com/post/java/java-lang/](https://ryan-han.com/post/java/java-lang/)>
 - 네이티브 코드 <[http://blog.naver.com/PostView.nhn?blogId=ft1998&logNo=100001231979&parentCategoryNo=&categoryNo=2&viewDate=&isShowPopularPosts=false&from=postView](http://blog.naver.com/PostView.nhn?blogId=ft1998&logNo=100001231979&parentCategoryNo=&categoryNo=2&viewDate=&isShowPopularPosts=false&from=postView)>
+- 객체 소멸자 <https://madplay.github.io/post/java-finalize>
 
 # Object 클래스
 
@@ -119,7 +120,7 @@ public int hashCode() {
 
 기본 틀(prototype)으로부터 같은 속성을 가진 객체의 복사본을 생성할 수 있다.
 
-객체지향 프로그래밍의 정보은닉에 위배되는 가능성이 있으므로 복제할 객체는 cloneable 인터페이스를 명시해야 한다. 즉 cloneable이라고 적힌 객체만 복제 가능하다.
+객체지향 프로그래밍의 정보은닉에 위배되는 가능성이 있으므로 복제할 객체는 Cloneable 인터페이스를 명시해야 한다. 즉 'Cloneable` 키워드가 적힌 객체만 복제 가능하다.
 
 앞에 N이 붙은 메소드는 native code가 들어간다는 것. CPU나 OS가 직접 실행할 수 있는 코드. 이에 관해서는 정리하지 않고 가볍게 참고할만한 링크를 남기겠다.
 
@@ -143,5 +144,7 @@ public class StudentTest {
 ```
 
 ## 05_finalize() 메소드
+" 더 이상 사용하지 않는 자원에 대한 정리 작업을 진행하기 위해 호출되는 종료자 메소드.
 
-이전처럼 사용자가 호출하는 것이 아니라 인스턴스가 힙 메모리에서 해체될 때 garbage collector에서 호출하는 메소드. 이게 정의가 되어 있으면 가비지 콜랙터가 실행 한다.
+이전처럼 사용자가 호출하는 것이 아니라 인스턴스가 힙 메모리에서 해체될 때 garbage collector에서 호출한다. 이게 정의가 되어 있으면 가비지 콜랙터가 실행 한다. 객체 소멸자라고도 한다.
+참고하기 좋은 블로그 링크를 위에 걸어두겠다.
