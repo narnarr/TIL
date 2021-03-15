@@ -4,6 +4,7 @@
 - Class 클래스 <[https://devyongsik.tistory.com/292](https://devyongsik.tistory.com/292)>
 - Class 클래스 <[https://palpit.tistory.com/entry/Java-자바-기본-API-Class-Class](https://palpit.tistory.com/entry/Java-%EC%9E%90%EB%B0%94-%EA%B8%B0%EB%B3%B8-API-Class-Class)>
 - reflection <[https://joont.tistory.com/165](https://joont.tistory.com/165)>
+- 동적 로딩 <https://ubange.tistory.com/223?category=647815>
 
 # Class 클래스
 
